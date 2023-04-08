@@ -1,10 +1,14 @@
 public class CreditPaymentService {
 
-    public int calculate(int kredit, int srok, double procent) {
+    public double calculate(double credit, double term, double percent) {
 
-        Math.pow(srok, procent);
-        int result = (int) (kredit * ((0.008325 * (1 + 0.008325) / ((1 + 0.008325) - 1))));
+        double p = percent / 12 / 100;  // месячный %
 
-        return result;
+
+
+        double result = p * (Math.pow (1 + p, term)) / ((Math.pow (1 + p, term) - 1));
+
+        double finish = credit * result;
+        return (int) finish;
     }
 }

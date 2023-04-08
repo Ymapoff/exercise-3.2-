@@ -3,11 +3,16 @@ public class Main {
 
         CreditPaymentService service = new CreditPaymentService();
 
-        int kredit = 1_000_000;
-        int srok = 12;
-        double procent = 9.99;
-        int mp = service.calculate(kredit, srok, procent);
 
-        System.out.println(mp);
+        double mp = service.calculate(1_000_000, 12, 9.99);
+        System.out.println(mp + "Платеж");
+
+
+        double mp2 = service.calculate(1_000_000, 24, 9.99);
+        System.out.println(mp2 + "Платеж");
+
+
+        double mp3 = service.calculate(1_000_000, 36, 9.99);
+        System.out.println(mp3 + "Платеж");
     }
 }
