@@ -8,6 +8,6 @@ public class Main {
         double procent = 9.99;
         int mp = service.calculate(kredit, srok, procent);
 
-        System.out.println(mp);
+        System.out.println(mp / srok);
     }
 }
