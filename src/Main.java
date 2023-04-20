@@ -4,6 +4,7 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
 
 
+<<<<<<< HEAD
         double mp = service.calculate(1_000_000, 12, 9.99);
         System.out.println(mp + "Платеж");
 
@@ -14,5 +15,8 @@ public class Main {
 
         double mp3 = service.calculate(1_000_000, 36, 9.99);
         System.out.println(mp3 + "Платеж");
+=======
+        System.out.println(mp / srok);
+>>>>>>> 21b732c81eeadfed46d20dacb8e796b5c584c935
     }
 }
